@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form{
+            width: max-content;
+            margin: auto;
+        }
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        fieldset{
+            margin-top: 20px;
+        }
+        legend{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Details Form</h1>
+    <form action="action_page.php" method="post" autocomplete="on">
+        <fieldset>
+
+            <legend> <strong>Personal Identification</strong></legend>
+            <table>
+
+                <tr>
+                    <td><label for="id_name">Name:</label></td>
+                    <td><input type="text" name="name" id="id_name" size="40" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_surname">Surname:</label></td>
+                    <td><input type="text" name="surname" id="id_surname" size="40" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_sex">Sex:</label></td>
+                    <td>
+                        <input type="radio" name="sex" id="id_sex" required>
+                        <label for="id_sex">Man</label>
+
+                        <input type="radio" name="sex" id="id_sex" required>
+                        <label for="id_sex">Woman</label>
+
+                        <input type="radio" name="sex" id="id_sex" required>
+                        <label for="id_sex">Other</label>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_address">Postal Address:</label></td>
+                    <td><input type="text" name="address" id="id_address" size="45"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_cp">Postal Code:</label></td>
+                    <td><input type="text" name="cp" id="id_cp" maxlength="5" size="7" pattern="[0][1-9][0-9]{3}"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_dni">DNI / Passport</label></td>
+                    <td><input type="text" name="dni" id="id_dni" pattern="[0-9]{8}[A-Za-z]{1}" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_email">E-mail:</label></td>
+                    <td><input type="email" name="email" id="id_email" size="45" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_phone">Phone number:</label></td>
+                    <td><input type="tel" name="phone" id="id_phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_mobile">Mobile number:</label></td>
+                    <td><input type="tel" name="mobile" id="id_mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_birthday">Birthdate:</label></td>
+                    <td><input type="date" name="birthday" id="id_birthday" max="2023-02-02" min="1903-12-01"></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_placeBirth">Place of birth:</label></td>
+                    <td><input type="text" name="placeBirth" id="id_placeBirth" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_country">Country of birth:</label></td>
+                    <td>
+                        <select name="country" id="id_country">
+                            <option value="spain">Spain</option>
+                            <option value="france">France</option>
+                            <option value="germany">Germany</option>
+                            <option value="norway">Norway</option>
+                            <option value="belgium">Belgium</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><label for="id_maritalStatus">Marital status:</label></td>
+                    <td>
+                        <input type="radio" name="maritalStatus" id="id_maritalStatus" required>
+                        <label for="id_maritalStatus">Single</label>
+
+                        <input type="radio" name="maritalStatus" id="id_maritalStatus" required>
+                        <label for="id_maritalStatus">Married</label>
+
+                        <input type="radio" name="maritalStatus" id="id_maritalStatus" required>
+                        <label for="id_maritalStatus">Divorced</label>
+                    </td>
+                </tr>
+
+            </table>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend> <strong>Employee Identification</strong></legend>
+            <table>
+
+                <tr>
+                    <td><label for="id_company">Company:</label></td>
+                    <td><input type="text" name="company" id="id_company" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_employeeNum">Employee number:</label></td>
+                    <td> <input type="text" name="employeeNum" id="id_employeeNum" maxlength="5" size="5" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_user">User:</label></td>
+                    <td><input type="text" name="user" id="id_user" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_password">Password:</label></td>
+                    <td><input type="password" name="password" id="id_password" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_department">Department:</label></td>
+                    <td><input type="text" name="department" id="id_department" size="30" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_startDate">Start date:</label></td>
+                    <td><input type="date" name="startDate" id="id_startDate" min="2013-12-01" max="2043-12-01" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_hours">Work hours:</label></td>
+                    <td>
+                        <label for="id_hours">From</label>
+                        <input type="time" name="hoursFrom" id="id_hours">
+
+                        <label for="id_hours">To</label>
+                        <input type="time" name="hoursTo" id="id_hours">
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td><label for="id_cv">C.V. (file attached):</label></td>
+                    <td><input type="file" name="cv" id="id_cv" value="Select file" multiple></td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Education</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="id_education">Level of education:</label></td>
+                    <td>
+                        <input type="radio" name="education" id="id_education" required>
+                        <label for="">Secondary education</label>
+                        
+                        <input type="radio" name="education" id="id_education" required>
+                        <label for="">High school</label>
+
+                        <input type="radio" name="education" id="id_education" required>
+                        <label for="">Vocational Course</label> 
+
+                        <input type="radio" name="education" id="id_education" required>
+                        <label for="">College</label> 
+                    </td>             
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Languages level</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="id_languages">English:</label></td>
+                    <td>
+                        <input type="checkbox" name="nativeIng" id="id_languages">
+                        <label for="id_languages">Native</label>
+                        <select name="nativeIng" id="id_languages" required>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                        </select>
+                    </td>
+                    
+
+                </tr>
+
+                <tr>
+                    <td><label for="id_languages">Catalàn:</label></td>
+                    <td>
+                        <input type="checkbox" name="nativeCat" id="id_languages">
+                        <label for="id_languages">Native</label>
+                        <select name="nativeCat" id="id_languages">
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="id_languages">Castellano:</label></td>
+                    <td>
+                        <input type="checkbox" name="nativeCast" id="id_languages">
+                        <label for="id_languages">Native</label>
+                        <select name="nativeCast" id="id_languages">
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_languages">Others:</label></td>
+                    <td>
+                        <input type="checkbox" name="nativeOthers" id="id_languages">
+                        <label for="id_languages">Native</label>
+                        <select name="nativeOthers" id="id_languages">
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="B1">B1</option>
+                            <option value="B2">B2</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Payment method</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="id_cardType">Card type:</label></td>
+                    <td>
+                        <input type="radio" name="cardType" id="id_cardType">
+                        <label for="id_cardType">VISA</label>
+
+                        <input type="radio" name="cardType" id="id_cardType">
+                        <label for="id_cardType">MasterCard</label>
+
+                        <input type="radio" name="cardType" id="id_cardType">
+                        <label for="id_cardType">American Express</label>
+
+                        <input type="radio" name="cardType" id="id_cardType">
+                        <label for="id_cardType">VISA Electron</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_cardNum">Card number:</label></td>
+                    <td><input type="text" name="cardNum" id="id_cardNum" maxlength="16" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" size="20"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_cvv">CVV/CVC:</label></td>
+                    <td><input type="text" name="cvv" id="id_cvv" maxlength="3" size="3"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_exDate">Expiration date:</label></td>
+                    <td><input type="date" name="exDate" id="id_exDate" max="2033-02-02" min="2018-12-01"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Individual preferences</strong></legend>
+            <table>
+                <tr>
+                    <td><label for="id_color">Color:</label></td>
+                    <td><input type="color" name="color" id="id_color"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_socialMedia">Facebook / Instagram / etc.:</label></td>
+                    <td><input type="url" name="socialMedia" id="id_socialMedia" size="50"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Other / Comments:</strong></legend>
+            <table>
+                <tr>
+                    <td><textarea name="comments" id="id_comments" cols="90" rows="10">Enter text here...</textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
