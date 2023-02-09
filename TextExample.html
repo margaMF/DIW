@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextExample</title>
+
+    <style>
+        *{
+            background-color: grey;
+        }
+        .div1{
+            background-color: black;
+            color: white;
+        }
+
+        .left{
+            text-align: left;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .right{
+            text-align: right;
+        }
+
+        .justify{
+            border: 1px solid black;
+            width: 500px;
+            text-align: justify;
+            color: white;
+        }
+
+        .lastCenter{
+            border: 1px solid black;
+            width: 500px;
+            text-align-last: left;
+            color: white;
+        }
+
+        .textOverUnderline{
+            color: white;
+            text-decoration: overline underline;
+        }
+
+        .textOverUnderlineDouble{
+            color: white;
+            text-decoration: overline underline;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 3px;
+        }
+
+        a{
+            text-transform: uppercase;
+            color: beige;
+        }
+        .ident{
+            text-indent: 50px;
+        }
+        .wordSpacing{
+            word-spacing: 5px;
+        }
+        .letterSpacing{
+            letter-spacing: 5px;
+            line-height: 1.5;
+        }
+        .noWrap{
+            white-space: nowrap;
+        }
+        .shadow1{
+            text-shadow: 5px 5px rgb(192, 187, 187);
+        }
+        .shadow1{
+            text-shadow: 5px 5px 2px rgb(192, 187, 187);
+        }
+        .shadow2{
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        This div has background color black and text white
+    </div>
+
+    <p class="left">Alignment is left</p>
+    <p class="center">Alignment is center</p>
+    <p class="right">Alignment is right</p>
+
+    <div class="justify">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?
+    </div>
+
+    <div class="lastCenter">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?
+    </div>
+    <p></p>
+    <div class="textOverUnderline">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab
+    </div>
+    <p></p>
+    <div class="textOverUnderlineDouble">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <p></p>
+    <a href="www.holahola.com">Enlace</a>
+    <p></p>
+    <p class="ident">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?</p>
+    <p></p>
+    <p class="wordSpacing">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?</p>
+    <p></p>
+    <p class="letterSpacing">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?</p>
+    <p></p>
+    <p class="noWrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim numquam animi, provident aliquid maxime veritatis doloribus ab id laboriosam cum? Aspernatur magnam adipisci velit quaerat ducimus, aliquid officia repellendus facilis?</p>
+    <p></p>
+    <h1 class="shadow1">Shadow effect</h1>
+    <p></p>
+    <h1 class="shadow2">Shadow effect</h1>
+</body>
+</html>
