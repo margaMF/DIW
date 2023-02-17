@@ -23,9 +23,7 @@
             padding: 20px;
             margin: auto;
         }
-        h1{
-            text-transform: capitalize;
-            font-variant: small-caps;
+        h1{ 
             border-bottom: 4px solid white;
         }
         .parrafo{
@@ -39,14 +37,50 @@
             background-color: white;
         }
 
+        h1 span:first-child{
+            text-transform: capitalize;
+        }
+
+        h1 span:nth-child(15){
+            text-transform: capitalize;
+        }
+
+        h1 span:nth-child(20){
+            text-transform: capitalize;
+        }
+
+        h1.byn span:nth-child(odd){
+            font-variant: small-caps;
+            color: black;
+        }
+
+        h1.byn span:nth-child(even){
+            font-variant: small-caps;
+            color: white;
+        }
+
+        p span:first-child{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
     <div class="contenedor">
-        <h1><span>H</span>an caído lod dos (radio futura)</h1>
+        <h1 class="byn">
+            <span>H</span><span>a</span><span>n</span>
+            <span>c</span><span>a</span><span>í</span><span>d</span><span>o</span>
+            <span>l</span><span>o</span><span>s</span>
+            <span>d</span><span>o</span><span>s</span>
+            <span>(r</span><span>a</span><span>d</span><span>i</span><span>o</span>
+            <span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>a)</span>
+                 
+        </h1>
         
         <div class="parrafo">
-            <p>Han caído los dos cual soldados fulminados al suelo.
+            <p class="primeraLetraP">
+                <span>H</span>an caído los dos cual soldados fulminados al suelo.
                 Y ahora están atrapados los dos en la misma prisión.
                 Vigilados por el ojo incansable del deseo voraz.
                 Sometidos a una insoportable tensión de silencio.
@@ -54,7 +88,8 @@
         </div>
        
         <div class="parrafo">
-            <p>Han caído los dos bajo el punto de vista exclusivo.
+            <p class="primeraLetraP">
+                <span>H</span>an caído los dos bajo el punto de vista exclusivo.
                 Iniciando una guerra en que nadie pudo vencer jamás.
                 Ella sabe lo que el hombre espera sin haberlo aprendido
                 Y él encuentra sentido al enigma que no le dejaba existir.
@@ -62,15 +97,15 @@
         </div>
        
         <div class="parrafo">
-           <p>
-            Antes eran dos barcos sin rumbo, hoy son dos marionetas que van.
+           <p class="primeraLetraP">
+            <span>A</span>ntes eran dos barcos sin rumbo, hoy son dos marionetas que van.
             Persiguiendo una luz cegadora por la línea del tiempo.
            </p>
         </div>
       
         <div class="parrafo">
-            <p>
-                Han caído los dos en la boca de un dios tenebroso.
+            <p class="primeraLetraP">
+                <span>H</span>an caído los dos en la boca de un dios tenebroso.
                 Que sonríe mostrando sus dientes de acero.
             </p>
         </div>

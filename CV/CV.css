@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(147, 226, 29);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+.contenedorLogo{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+}
+
+.contBoton{
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+}
+
+.boton{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    display: block;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 85px;
+    background-color:rgb(191, 255, 95);
+    border-color:rgb(191, 255, 95);
+}
+
+.iconos{
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.container{
+    margin: 75px auto;
+}

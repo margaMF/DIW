@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class</title>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+
+        a{
+            text-decoration: none;
+            color: red;
+        }
+
+        a:active{
+            color: blueviolet;
+        }
+        div.color:hover{
+           background-color: whitesmoke;
+        }
+        div.childLine::first-line{
+            color: green;
+        }
+
+        h2.childFirst span:first-child{
+            text-transform: uppercase;
+            color: black;
+        }
+
+        h2.oddEven span:nth-child(odd){
+            text-transform: uppercase;
+            color: black;
+        }
+
+        h2.oddEven span:nth-child(even){
+            text-transform: uppercase;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.iessonferrer.net/">IES SON FERRER</a>
+
+    <div class="color">hjfhg hgjfhjg hjfghfjhg jhgjfhjf</div>
+
+    <p></p>
+
+    <div class="childLine">
+        jhdsfdhjghdflhgdfjghdjkffdjkh <br>
+        gdsfjdgsgjfdshghagfh <br>
+        dgshfsdgfjdfhjgfjkdfgdjsf
+    </div>
+
+    <h2 class="childFirst">rhdfdfjdsf <span>primer span</span> <span>segundo span</span> jfhdj jhdfj jdfj</h2>
+
+    <h2 class="oddEven">
+        <span>H</span>
+        <span>a</span>
+        <span>n</span>
+        <span>c</span>
+        <span>a</span>
+        <span>i</span>
+        <span>d</span>
+        <span>o</span>
+    </h2>
+</body>
+</html>
