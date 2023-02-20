@@ -12,19 +12,23 @@ a{
     color: rgb(39, 39, 39);
 }
 
-.contenedorLogo{
+p{
+    font-size: 20px;
+}
+
+.contLogo{
     width: 150px;
     height: 150px;
     margin: 30px auto;
 }
 
-.contBoton{
+.contButton{
     width: 300px;
     height: 300px;
     margin: 40px auto;
 }
 
-.boton{
+.button{
     margin-bottom: 20px;
     width: 300px;
     height: 50px;
@@ -37,7 +41,7 @@ a{
     border-color:rgb(191, 255, 95);
 }
 
-.iconos{
+.icons{
     font-size: 25px;
     color: rgb(39, 39, 39);
 }

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(147, 226, 29);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+p{
+    font-size: 20px;
+}
+
+.home{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(191, 255, 95);
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.iconHome{
+    font-size: 30px;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.contLogo{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+}
+
+.socialMedia{
+    width: 110px;
+    height: 20px;
+    margin: 80px auto;
+}
+
+.info{
+    width: 250px;
+    height: 100px;
+    margin: 40px auto;
+}
+
+.iconsSocial{
+    font-size: 40px;
+    color: rgb(39, 39, 39);
+}
+
+.instagram{
+    margin-left: 20px;
+}
+
+.icons{
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.container{
+    margin: 20px auto;
+}

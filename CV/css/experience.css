@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(147, 226, 29);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+}
+
+.home{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(191, 255, 95);
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.iconHome{
+    font-size: 30px;
+}
+
+.menu{
+    background-color: rgb(191, 255, 95);
+    border-color: rgb(191, 255, 95);
+    font-size: 20px;
+    color: rgb(39, 39, 39);
+    margin-top: 50px;
+    width: 300px;
+}
+
+.contMenu{
+    width: 300px;
+    height: 80px;
+    margin: auto;
+}
+
+
+li{
+    font-size: 20px;
+    color: rgb(39, 39, 39); 
+}
+
+.icons{
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+}
+
+.container{
+    margin: 20px auto;
+}
